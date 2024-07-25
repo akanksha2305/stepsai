@@ -4,20 +4,13 @@
 
 This project implements a sophisticated Retrieval-Augmented Generation (RAG) system that utilizes hierarchical tree-based indexing of textbooks for answering user queries. The system includes content extraction, hierarchical indexing, advanced retrieval techniques, and a user interface for interaction.
 
-## Project Structure
-
-1. **`retrieval/`** - Contains functions for loading hierarchical indexes and retrieving relevant sections.
-2. **`generation/`** - Contains functions for generating responses using a Language Model.
-3. **`chatbot/`** - Contains the Streamlit user interface for interacting with the system.
-4. **`index/`** - Directory for hierarchical index files of the textbooks.
 
 ## Textbooks Used
 
-1. **Textbook 1 Title** - [Link to Book](#)
-2. **Textbook 2 Title** - [Link to Book](#)
-3. **Textbook 3 Title** - [Link to Book](#)
+1. **Introduction to Data Science Using Python** - [Link to Book](https://open.umn.edu/opentextbooks/textbooks/introduction-to-data-science-using-python)
+2. **Dynamics of the Standard Model - [Link to Book](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/FF8A95F0F22A67FABA729DBB39BA2816/9781009291002AR.pdf/Dynamics_of_the_Standard_Model.pdf?event-type=FTLA)
+3. **Research Data Management in the Canadian Context** - [Link to Book](https://ecampusontario.pressbooks.pub/canadardm/)
 
-*(Replace placeholders with actual textbook titles and links.)*
 
 ## Task Breakdown
 
@@ -68,5 +61,26 @@ This project implements a sophisticated Retrieval-Augmented Generation (RAG) sys
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/your-username/repository-name.git
-   cd repository-name
+   git clone https://github.com/akanksha2305/stepsai.git
+   cd stepsai
+
+2. **Create a Virtual Environment**
+
+   ```sh
+   python -m venv venv
+venv\Scripts\activate
+
+3. **Install Dependencies**
+
+   ```sh
+   pip install -r requirements.txt
+
+##Running the System
+1. **Start the Streamlit Interface**
+
+```sh
+  Copy code
+  streamlit run chatbot/main.py
+Open your browser and navigate to http://localhost:8501 to interact with the chatbot.
+
+
